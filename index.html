@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Portfolio</title>
+    <style>
+        :root { --bg: #000; --card: #111; --accent: #fff; --text: #eee; }
+        body { background: var(--bg); color: var(--text); font-family: sans-serif; margin: 0; padding: 0; }
+        header { text-align: center; padding: 60px 20px; border-bottom: 1px solid #222; }
+        h1 { font-weight: 200; letter-spacing: 5px; text-transform: uppercase; margin: 0; }
+        .gallery { max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+        .item { background: var(--card); border: 1px solid #222; border-radius: 8px; overflow: hidden; }
+        video { width: 100%; aspect-ratio: 1/1; object-fit: cover; background: #000; }
+        .desc { padding: 15px; }
+        .title { font-size: 1rem; color: var(--accent); margin-bottom: 5px; }
+        .info { font-size: 0.8rem; color: #666; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AI 作品展示集</h1>
+</header>
+
+<div class="gallery">
+
+    <div class="item">
+        <video controls loop muted>
+            <source src="古风和田玉.mp4" type="video/mp4"> </video>
+        <div class="desc">
+            <div class="title">项目作品 01</div> <div class="info">制作工具：AI 生成 + 后期剪辑</div> </div>
+    </div>
+    <div class="item">
+        <video controls loop muted><source src="2.mp4" type="video/mp4"></video>
+        <div class="desc">
+            <div class="title">项目作品 02</div>
+            <div class="info">制作工具：AI 生成 + 后期剪辑</div>
+        </div>
+    </div>
+
+    </div>
+
+<footer>
+    <p style="text-align: center; padding: 40px; color: #333; font-size: 12px;">© 2026 AI PORTFOLIO</p>
+</footer>
+
+</body>
+</html>
